@@ -1,0 +1,308 @@
+*{
+    margin:0%;
+    padding:0%;
+    
+}
+p::selection{
+    background-color: pink;
+    color:green;
+}
+
+.main-header{
+    width:94%;
+    float:left;
+    padding:10px 3% 0px 3%;
+    background-color: #333;
+    position:fixed;
+    top:0%;
+    left:0%;
+    z-index: 99;
+}
+
+.header-left{
+    width:20%;
+    float:left;
+}
+.header-left img{
+    width:200px;
+    float:left;
+    height: auto;
+    object-fit: contain;
+}
+.heade-right{
+    width:80%;
+    float:left;
+}
+.heade-right ul{
+    float:right;
+    background-color: #000000;
+    padding: 15px 6px;
+    
+}
+.heade-right ul li{
+    list-style-type: none;
+    float:left;
+    padding:0px 15px 0px 15px;
+}
+.heade-right ul li a{
+    color:#ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.heade-right ul li a:hover{
+    background-color: #00ffff;
+}
+
+.banner{
+    margin-top: 100px;
+    width:100%;
+    float:left;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+   
+}
+.banner .hello{
+    position: absolute;
+    top:33%;
+    left:43%;
+    font-size: 50px;
+    /* without  hello class workout ? */
+   
+}
+.banner-content{
+    width:100%;
+    float:left;
+    margin:35px 40px;
+
+}
+.banner-content img{
+    width:100%;
+    float:left;
+    height:300px;
+    object-fit: cover;
+    
+}
+.cards-sec {
+    width:100%;
+    float:left;
+    padding-bottom: 5%;
+    display:flex;
+    justify-content: space-around;
+   
+
+}
+.card-content .love{
+    position: absolute;
+    top: 45%;
+    left: 87%;
+    width: 41px;
+}
+.card-content{
+    width:30%;
+    float:left;
+    position: relative;
+    /* transform:skew(10deg); change box type */
+   
+}
+.card-image {
+    width:100%;
+    float:left;
+
+   
+}
+.card-image img{
+    width:95%;
+    object-fit: cover;
+    height:200px;
+    border:1px solid #ccc;
+    padding:2%;
+    border-radius: 20px/60px;
+    
+ 
+}
+.card-info{
+    width:100%;
+    float:left;
+    
+}
+.card-info h3{
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 20px;
+    margin:18px 0px 10px 0px;
+    font-family: 'Poppins-Bold';
+      
+}
+.card-info p{
+    width:100%;
+    float:left;
+    margin:3px 0px 10px 0px;
+    font-size: 18px;
+    font-family: 'Poppins-Regular';
+    /* writing-mode:vertical-rl; it is a writing mode*/
+}
+.card-info a{
+    float:right;
+    color:#c7c71a;
+}
+
+.intro-sec{
+    width:100%;
+    float:left;
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 5%;
+    position: relative;
+}
+.intro-content{
+    width:46%;
+    float:left;
+    
+}
+.intro-content h3{
+    font-weight: 800;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Poppins-Bold';
+    
+}
+.intro-content p{
+    font-size: 18px;
+    font-family: 'Poppins-Regular';
+}
+.intro-content a{
+    color:#c7c71a
+}
+.intro-link{
+
+    margin: 22px 20px 0px 0px;
+    float: right;
+}
+.intro-image .love{
+    position: absolute;
+    top: 69%;
+    left: 90%;
+    width: 75px;
+
+}
+.intro-image{
+    width:46%;
+    float:left;
+}
+
+.intro-image-content{
+    width:100%;
+    float:left;
+}
+.intro-image-content img{
+    width:95%;
+    float:left;
+    height:auto;
+}
+
+.footer{
+    width:100%;
+    float:left;
+    background-color:#333;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-content{
+    width:22%;
+    float:left;
+    padding:0px 10px;
+    margin:20px 0px;
+}
+.footer-content li{
+    list-style-type: none;
+    padding:10px 0px;
+    border-bottom: 2px solid #ffffff;
+
+}
+.footer-content h4{
+    
+
+    color: #ffffff;
+    text-align: left;
+    
+    margin:  28px 0px 13px 0px;
+   ;
+    font-size: 23px;
+    font-family: 'Poppins-SemiBold';
+
+}
+.footer-content li a{
+    color:#c7c71a;
+    line-height: 2px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.copyright-section{
+    width:100%;
+    float:left;
+    background-color: #000000;
+    padding:25px 0px;
+}
+.copyright-left{
+    width:50%;
+    float:left;
+
+}
+.copyright-left p{
+    color:#ffffff;
+    padding-left: 12px;
+    font-family: 'Poppins-Regular';
+}
+.copyright-right{
+    width:50%;
+    float:right;
+}
+.copyright-right p{
+    text-align:right;
+    color:#ffffff;
+    padding-right: 50px;
+    font-family: 'Poppins-Regular';
+}
+
+
+@media(min-width:320px) and (max-width:767px){
+.cards-sec{
+    display:block;
+}
+.card-content{
+    width:100%;
+    margin:0 0 20px 0;
+}
+.intro-content{
+    width:100%;
+}
+.banner{
+    margin:0px 40px;
+}
+.banner .banner-content
+{
+ margin: 20px;
+}
+.banner .banner-content img{
+    width:100%;
+    height:200px;
+}
+.cards-sec{
+    padding-left:6%;
+}
+.intro-sec{
+    padding-left:40px;
+}
+.intro-image{
+    width:100%;
+}
+.footer{
+    width:25%;
+    float:left;
+    padding:0px 10px;
+    
+}
+}
